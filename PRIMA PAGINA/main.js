@@ -467,30 +467,33 @@ function createAndAppendCard(room, container) {
 }
 
 const romeSwiper = new Swiper(".rome-swiper", {
+  grabCursor: true,
   navigation: {
     nextEl: ".rome-right-arrow",
     prevEl: ".rome-left-arrow",
   },
 
-  slidesPerView: 4,
+  slidesPerView: 7,
 });
 
 const turinSwiper = new Swiper(".turin-swiper", {
+  grabCursor: true,
   navigation: {
     nextEl: ".turin-right-arrow",
     prevEl: ".turin-left-arrow",
   },
 
-  slidesPerView: 4,
+  slidesPerView: 7,
 });
 
 const milanSwiper = new Swiper(".milan-swiper", {
+  grabCursor: true,
   navigation: {
     nextEl: ".milan-right-arrow",
     prevEl: ".milan-left-arrow",
   },
 
-  slidesPerView: 4,
+  slidesPerView: 7,
 });
 
 romeRooms.forEach((room) => {
@@ -536,3 +539,15 @@ btnModalValue.addEventListener("click", () => {
 closeModalValue.addEventListener("click", () => {
   sectionModal(".modal-value", false);
 });
+
+/*AGGIUNTA FUNZIONE PER CONNETTERE LE PAGINE*/
+
+const airbnbCards = document.querySelectorAll(".airbnb-card");
+
+airbnbCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    window.location.href = "secondpage.html";
+  });
+});
+
+/*FINE FUNZIONE PER CONNETTERE LE PAGINE*/

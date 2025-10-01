@@ -17,7 +17,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -50,7 +51,7 @@
                   src="https://cdn-icons-png.flaticon.com/512/10723/10723211.png"
                   alt=""
               /></a>
-              <h6 class="navbarbtn-text">Allogi</h6>
+              <h6 class="navbarbtn-text">Alloggi</h6>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
@@ -101,69 +102,83 @@
         </div>
       </div>
     </nav>
-    
-      <div class="container-second-navbar">
-    <div class="second-navbar">
-      <div class="second-navbar-item">
-        <span>Dove</span>
-        <input type="text" class="inputs" placeholder="Cerca Destinazioni">
-      </div>
-      <div class="second-navbar-item">
-        <span>Check-in</span>
-        <input type="date" class="inputs" placeholder="Aggiungi D...">
-      </div>
-      <div class="second-navbar-item">
-        <span>Check-out</span>
-        <input type="date" class="inputs" placeholder="Aggiungi D...">
-      </div>
-      <div class="second-navbar-item">
-        <div class="container-last-btn">
-          <input type="checkbox" class="inputs" id="toggleMenu" />
-          <label for="toggleMenu" class="dropdown-toggle">Chi</label>
+
+    <div class="container-second-navbar">
+      <div class="second-navbar">
+        <div class="second-navbar-item">
+          <span>Dove</span>
+          <input type="text" class="inputs" placeholder="Cerca Destinazioni" />
+        </div>
+        <div class="second-navbar-item">
+          <span>Check-in</span>
+          <input type="date" class="inputs" placeholder="Aggiungi D..." />
+        </div>
+        <div class="second-navbar-item">
+          <span>Check-out</span>
+          <input type="date" class="inputs" placeholder="Aggiungi D..." />
+        </div>
+        <div class="second-navbar-item">
+          <div class="container-last-btn">
+            <input type="checkbox" class="inputs" id="toggleMenu" />
+            <label for="toggleMenu" class="dropdown-toggle">Chi</label>
             <div class="dropdown-menu">
               <div>Adulti</div>
               <div>Bambini</div>
               <div>Neonati</div>
               <div>Animali domestici</div>
             </div>
-          <img class="second-navbar-search" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ic_search_white_48px.svg/1200px-Ic_search_white_48px.svg.png" alt="#">
+            <img
+              class="second-navbar-search"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ic_search_white_48px.svg/1200px-Ic_search_white_48px.svg.png"
+              alt="#"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <!-- Swiper Roma -->
-    <div class="d-flex">
-      <div class="rome-left-arrow bi bi-chevron-left"></div>
-      <div class="rome-right-arrow bi bi-chevron-right"></div>
-    </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between w-100">
+        <h4 class="swiper-title">Roma: alloggi popolari ></h4>
+        <div class="d-flex">
+          <div class="rome-left-arrow bi bi-chevron-left"></div>
+          <div class="rome-right-arrow bi bi-chevron-right"></div>
+        </div>
+      </div>
 
-    <div class="swiper rome-swiper">
-      <div class="swiper-wrapper swiper-wrapper-rome d-flex"></div>
+      <div class="swiper rome-swiper">
+        <div class="swiper-wrapper swiper-wrapper-rome d-flex"></div>
+      </div>
     </div>
-
     <!-- Swiper Torino -->
-    <div class="d-flex">
-      <div class="turin-left-arrow bi bi-chevron-left"></div>
-      <div class="turin-right-arrow bi bi-chevron-right"></div>
-    </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between w-100">
+        <h4 class="swiper-title">Torino: alloggi popolari ></h4>
+        <div class="d-flex">
+          <div class="turin-left-arrow bi bi-chevron-left"></div>
+          <div class="turin-right-arrow bi bi-chevron-right"></div>
+        </div>
+      </div>
 
-    <div class="swiper turin-swiper">
-      <div class="swiper-wrapper swiper-wrapper-turin d-flex"></div>
+      <div class="swiper turin-swiper">
+        <div class="swiper-wrapper swiper-wrapper-turin d-flex"></div>
+      </div>
     </div>
-
     <!-- Swiper Milano -->
-    <div class="d-flex">
-      <div class="milan-left-arrow bi bi-chevron-left"></div>
-      <div class="milan-right-arrow bi bi-chevron-right"></div>
-    </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between w-100">
+        <h4 class="swiper-title">Milano: alloggi popolari ></h4>
+        <div class="d-flex">
+          <div class="milan-left-arrow bi bi-chevron-left"></div>
+          <div class="milan-right-arrow bi bi-chevron-right"></div>
+        </div>
+      </div>
 
-    <div class="swiper milan-swiper">
-      <div class="swiper-wrapper swiper-wrapper-milan d-flex"></div>
+      <div class="swiper milan-swiper">
+        <div class="swiper-wrapper swiper-wrapper-milan d-flex"></div>
+      </div>
     </div>
-    <div class="swiper-slide-rome d-flex gap-2"></div>
-    <div class="swiper-slide-turin d-flex gap-2"></div>
-    <div class="swiper-slide-milan d-flex gap-2"></div>
-
+    <!-- Footer -->
     <footer class="container-fluid">
       <div class="row top-footer">
         <div class="col-12 col-md-4">
@@ -365,6 +380,7 @@
         </div>
       </div>
     </footer>
+    <!-- Fine Footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
