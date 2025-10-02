@@ -474,6 +474,17 @@ const romeSwiper = new Swiper(".rome-swiper", {
   },
 
   slidesPerView: 7,
+    breakpoints:{
+    0:{
+      slidesPerView:2,
+    },
+    768:{
+      slidesPerView:4
+    },
+    1200:{
+      slidesPerView:7
+    }
+  }
 });
 
 const turinSwiper = new Swiper(".turin-swiper", {
@@ -484,6 +495,18 @@ const turinSwiper = new Swiper(".turin-swiper", {
   },
 
   slidesPerView: 7,
+ 
+  breakpoints:{
+    0:{
+      slidesPerView:2,
+    },
+    768:{
+      slidesPerView:4
+    },
+    1200:{
+      slidesPerView:7
+    }
+  }
 });
 
 const milanSwiper = new Swiper(".milan-swiper", {
@@ -494,6 +517,17 @@ const milanSwiper = new Swiper(".milan-swiper", {
   },
 
   slidesPerView: 7,
+    breakpoints:{
+    0:{
+      slidesPerView:2,
+    },
+    768:{
+      slidesPerView:4
+    },
+    1200:{
+      slidesPerView:7
+    }
+  }
 });
 
 romeRooms.forEach((room) => {
@@ -508,6 +542,8 @@ milanRooms.forEach((room) => {
   createAndAppendCard(room, swiperWrapperMilan);
 });
 
+
+ //FUNZIONE PER MODALI
 const btnModalLanguage = document.getElementById("button-language");
 const modalLanguage = document.querySelector(".modal-language");
 const closeModalLanguage = document.querySelector(".close-language");
@@ -551,3 +587,5 @@ airbnbCards.forEach((card) => {
 });
 
 /*FINE FUNZIONE PER CONNETTERE LE PAGINE*/
+
+
