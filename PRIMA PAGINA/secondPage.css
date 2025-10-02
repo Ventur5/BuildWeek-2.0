@@ -10,8 +10,18 @@
 .imgTitle {
 
    width: 100%;
-    object-fit: cover;
-    
+   height: 100%;
+    object-fit: cover;   
+}
+.imgtitle-left{
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+.imgtitle-bordertop{
+    border-top-right-radius: 10px;
+}
+.imgtitle-borderbottom{
+    border-bottom-right-radius: 10px;
 }
 .host1{
 
