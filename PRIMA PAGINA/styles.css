@@ -1,14 +1,11 @@
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 /*----------------Navbar--------------------------*/
 .navbar {
   background: #ffffff;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(240, 240, 240, 1) 100%
-  );
+  background-color: white
 }
 
 .navbar-brand img {
@@ -97,11 +94,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(240, 240, 240, 1) 100%
-  );
+  background-color: transparent;
 }
 
 .second-navbar {
@@ -143,11 +136,6 @@ body {
   border-radius: 50px;
   border: 1px solid #3a3a3a;
   box-shadow: 0 0 8px #00000037;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  margin: 20px;
 }
 
 .second-navbar-item img {
@@ -235,7 +223,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: transparent;
 }
 
-/*IMMAGINE HERO DOPO NAVBAR*/
+/*--------------IMMAGINE HERO DOPO NAVBAR---------------*/
 .container-img-hero {
   width: 100vw;
   height: 700px;
@@ -249,7 +237,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   overflow: hidden;
 }
 
-.container-img-hero::after, .container-img-hero::before {
+.container-img-hero::after, 
+.container-img-hero::before {
   position: absolute;
   content: "";
   left: 0;
@@ -262,8 +251,7 @@ top: 0;
 background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0),
-    rgba(240, 240, 240, 1),
-    rgba(240, 240, 240, 1)   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
+    white   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
   );
 }
 .container-img-hero::before{
@@ -275,7 +263,19 @@ background: linear-gradient(
     rgb(255, 254, 254)   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
   );
 }
-/*----------------cards--------------------------*/
+/*----------------Hero MediaQueries--------------------------*/
+@media (max-width: 768px) {
+  .container-img-hero {
+    height: 300px;
+    width: 100%;
+  }
+  .container-img-hero::after, 
+  .container-img-hero::before {
+    width: 100%;
+  }
+}
+
+/*----------------cards-carousel--------------------------*/
 .container-main{
   margin: 2rem;
 }
@@ -361,6 +361,33 @@ background: linear-gradient(
   color: #6a6a6a;
   margin: 3px 0;
 }
+
+/*----------------card-carousel MediaQueries--------------------------*/
+
+@media (max-width: 768px) {
+  .swiper-title {
+    font-size: 17px;
+    margin-left: 0;
+  }
+  .container-card-carousel {
+    padding: 0;
+  }
+  .airbnb-card {
+    width: 250px;
+  }
+  .swiper-wrapper {
+    padding-left: 15px;
+    display: flex;
+  }
+} 
+/*-------uso important per no modificare il js pd; angelo:) --------------------------*/
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 200px !important;
+    margin-right: 35px !important;
+  }
+}
+
 
 .loved-by-guests-badge {
   font-size: 10px;
