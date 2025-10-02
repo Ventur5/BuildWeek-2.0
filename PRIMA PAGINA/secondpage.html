@@ -1,303 +1,446 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Airbnb-Stanza/Milano,Italia</title>
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaXkdtkvlTpDiPo0uHyuaaUN_u9XbZ_CbJg&s">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./secondPage.css">
-</head>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaXkdtkvlTpDiPo0uHyuaaUN_u9XbZ_CbJg&s"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./secondPage.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+    <div class="container-second-navbar d-none d-sm-flex">
+      <img src="./assets/logo-pink.png" class="img-pinkLogo" alt="Logo" />
 
-
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img class="logo" src="./assets/assets/logo-pink.png" alt=""></a>
-
-                <div class="container">
-                    <input type="text" class="input border rounded-5">
-                    <input type="text" class="input border rounded-5">
-                    <input type="text" class="input border rounded-5">
-                </div>
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                    <span>Inizia </span>
-                    <span>a</span>
-                    <span>ospitare</span>
-
-                    <i class="bi bi-globe2 border rounded-circle d-flex justify-content-center align-items-center"></i>
-                    <i class="bi bi-list border rounded-circle d-flex justify-content-center align-items-center"></i>
-                </div>
-            </div>
-        </nav>
-
-        <hr>
-
-        <div class="conteiner-fluid">
-           
-                <div class="d-flex justify-content-between align-items-center gap-3 ">
-
-
-                    <h1>In centro a pochi passi da Brera</h1>
-                    <div class="d-flex gap-3">
-                        <i class="bi bi-box-arrow-up"></i>
-                        <a href="#" class="text-black">Condividi</a>
-                        <i class="bi bi-heart"></i>
-                        <a href="#" class="text-black">Salva</a>
-                    </div>
-                </div>
-                <div class="content d-flex justify-content-center align-items-center gap-4">
-
- <div class="row">
-                    <div class="col-6">
-                        <img src="./assets/assets/1grande.avif" class="imgTitle imgtitle-left img-fluid h-100 border"
-                            alt="">
-                    </div>
-                    <div class="col-6 d-flex flex-column justify-content-between">
-                    
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="./assets/assets/2.webp " class="imgTitle  img-fluid h-100" width="300"
-                                        height="200" alt="">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/assets/3.webp" class="imgTitle imgtitle-bordertop img-fluid h-100" width="300"
-                                        height="200" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="./assets/assets/5.webp" class="imgTitle img-fluid " width="300"
-                                        height="200" alt="">
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/assets/2.webp" class="imgTitle img-fluid imgtitle-borderbottom h-100" width="300"
-                                        height="200" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="second-navbar">
+        <div class="second-navbar-item">
+          <span>Ovunque</span>
         </div>
 
-        <div class="conteiner">
+        <div class="second-navbar-item">
+          <span>Qualche settimana</span>
+        </div>
+
+        <div class="second-navbar-item with-icon">
+          <span>Aggiungi ospiti</span>
+          <div class="search-icon-wrapper">
+            <img
+              class="second-navbar-search"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ic_search_white_48px.svg/1200px-Ic_search_white_48px.svg.png"
+              alt="Cerca"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-lastbtn">
+        <h6 class="host-text">Inizia a ospitare</h6>
+
+        <div class="last-btn icon-btn" title="Lingua / mondo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
+            />
+          </svg>
+        </div>
+
+        <div class="last-btn icon-btn" title="Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="container">
+      <hr />
+
+      <div class="conteiner-fluid">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <h1>In centro a pochi passi da Brera</h1>
+          <div class="d-flex gap-3">
+            <i class="bi bi-box-arrow-up"></i>
+            <a href="#" class="text-black">Condividi</a>
+            <i class="bi bi-heart"></i>
+            <a href="#" class="text-black">Salva</a>
+          </div>
+        </div>
+        <div
+          class="content d-flex justify-content-center align-items-center gap-4"
+        >
+          <div class="row">
+            <div class="col-6">
+              <img
+                src="./assets/assets/1grande.avif"
+                class="imgTitle imgtitle-left img-fluid h-100 border"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="./assets/assets/2.webp "
+                    class="imgTitle img-fluid h-100"
+                    width="300"
+                    height="200"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./assets/assets/3.webp"
+                    class="imgTitle imgtitle-bordertop img-fluid h-100"
+                    width="300"
+                    height="200"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="./assets/assets/5.webp"
+                    class="imgTitle img-fluid"
+                    width="300"
+                    height="200"
+                    alt=""
+                  />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="./assets/assets/2.webp"
+                    class="imgTitle img-fluid imgtitle-borderbottom h-100"
+                    width="300"
+                    height="200"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner">
+      <div class="row">
+        <div class="col-9">
+          <div class="mt-3">
+            <h3>Stanza &middot; Milano, Italia</h3>
+            <p>1 letto matrimoniale &middot; Bagno condiviso</p>
+          </div>
+
+          <div
+            class="d-flex border border-2 rounded-3 gap-5 align-items-center justify-content-center fs-5 p-4"
+          >
+            <div class="">
+              <p>
+                Amato <br />
+                dagli ospiti
+              </p>
+            </div>
+
+            <p>
+              Uno degli alloggi piu amati <br />
+              dagli ospiti di Airbnb
+            </p>
+
+            <div class="d-flex flex-column align-items-center">
+              <p class="fw-bold fs-3">4.94</p>
+              <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div class="vr"></div>
+            <div class="fw-bold fs-3 d-flex flex-column align-items-center">
+              <p>484 <br /></p>
+              <span>recensioni</span>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 align-content-center mt-5">
+            <img
+              src="./assets/assets/propic.png"
+              class="host1 img-fluid rounded-circle"
+              alt=""
+            />
+            <p>
+              <span class="fw-bold">Nome dell'host:Dimitri</span><br /><span
+                >Superhost &middot 14 anni da host</span
+              >
+            </p>
+          </div>
+          <hr />
+
+          <div class="d-flex gap-3 mt-4">
+            <i class="bi bi-key fs-2"></i>
+            <p>
+              <span class="fw-bold">Esperienza di check-in eccezionale</span>
+              <br /><span
+                >Gli ospiti che hanno soggiornato qui di recente hanno valutato
+                la procedura di check-in con 5 stelle.</span
+              >
+            </p>
+          </div>
+
+          <div class="d-flex gap-3 mt-4">
+            <i class="bi bi-geo-alt fs-2"></i>
+            <p>
+              <span class="fw-bold">Stanza in alloggio in affitto</span>
+              <br /><span class="text-uppercase"
+                >La tua stanza si trova in un alloggio e hai accesso agli spazi
+                condivisi.</span
+              >
+            </p>
+          </div>
+
+          <div class="d-flex gap-3 align-items-center gap-4 mt-3">
+            <img src="./assets/assets/BED.png" class="host" alt="" />
+            <p>
+              <span class="fw-bold">Stanza in alloggio in affitto</span>
+              <br /><span class="text-uppercase"
+                >La tua stanza si trova in un alloggio e hai accesso agli spazi
+                condivisi.</span
+              >
+            </p>
+          </div>
+          <hr />
+
+          <p>
+            Alcune informazioni sono state tradotte automaticamente.<br />
+            <a class="fw-bold text-black" href="#"
+              >Mostra il testo nella lingua originale</a
+            >
+          </p>
+
+          <h4 class="fw-bold my-4">A proposito di questo alloggio</h4>
+          <p>
+            A proposito di questo alloggio Nel centro storico di Milano, a pochi
+            passi da Brera, il Duomo, in un’atmosfera informale, appartamento
+            pulito, offriamo una camera privata con ampio letto, armadio,
+            scrivania, WI-FI. Bagno, salone con angolo cottura sono in
+            condivisione. Io che sono il proprietario, il mio compagno, la
+            nostra gatta viviamo nell’appartamento. Via aspettiamo nel cuore di
+            Milano.
+          </p>
+
+          <p>
+            <span class="fw-bold">Lo spazio </span> <br />
+            Vi troverete fra la fermata di metrò di Lanza e Moscova. A pochi
+            passi da Brera, dieci....
+          </p>
+          <div class="btn btn-secondary mb-5 px-3 py-2">
+            <span class="fw-bold text-black">Mostra altro</span>
+          </div>
+
+          <hr />
+
+          <h4>Dove dormirai</h4>
+
+          <img
+            src="./assets/assets/letto.avif"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+          <p class="mt-3 mb-5">
+            <span class="fw-bold">Camera da letto</span> <br /><span
+              class="text-secondary"
+              >1 letto matrimoniale</span
+            >
+          </p>
+
+          <hr />
+
+          <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="mt-3">
-                        <h3>Stanza &middot; Milano, Italia</h3>
-                        <p>1 letto matrimoniale &middot; Bagno condiviso</p>
-                    </div>
-
-                    <div
-                        class="d-flex border border-2 rounded-3 gap-5 align-items-center justify-content-center fs-5 p-4">
-                        <div class="">
-                            <p>Amato <br> dagli ospiti</p>
-
-                        </div>
-
-                        <p>Uno degli alloggi piu amati <br> dagli ospiti di Airbnb</p>
-
-                        <div class="d-flex flex-column  align-items-center">
-                            <p class="fw-bold fs-3">4.94</p>
-                            <div class="star">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <div class="vr"></div>
-                        <div class="fw-bold fs-3 d-flex flex-column  align-items-center">
-                            <p>484 <br></p>
-                            <span>recensioni</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex gap-3 align-content-center mt-5">
-                        <img src="./assets/assets/propic.png" class=" host1 img-fluid  rounded-circle" alt="">
-                        <p><span class="fw-bold">Nome dell'host:Dimitri</span><br><span>Superhost &middot 14 anni da
-                                host</span></p>
-
-                    </div>
-                    <hr>
-
-                    <div class="d-flex gap-3 mt-4">
-                        <i class="bi bi-key fs-2"></i>
-                        <p><span class="fw-bold">Esperienza di check-in eccezionale</span> <br><span>Gli ospiti che
-                                hanno soggiornato qui di recente hanno valutato la procedura di check-in con 5
-                                stelle.</span></p>
-                    </div>
-
-                    <div class="d-flex gap-3 mt-4">
-                        <i class="bi bi-geo-alt fs-2"></i>
-                        <p><span class="fw-bold">Stanza in alloggio in affitto</span> <br><span
-                                class="text-uppercase">La
-                                tua stanza si trova in un alloggio e hai accesso agli spazi condivisi.</span></p>
-                    </div>
-
-                    <div class="d-flex gap-3 align-items-center gap-4 mt-3">
-                        <img src="./assets/assets/BED.png" class="host" alt="">
-                        <p><span class="fw-bold">Stanza in alloggio in affitto</span> <br><span
-                                class="text-uppercase">La
-                                tua stanza si trova in un alloggio e hai accesso agli spazi condivisi.</span></p>
-                    </div>
-                    <hr>
-
-                    <p>Alcune informazioni sono state tradotte automaticamente.</class=> <br>
-                        <a class="fw-bold  text-black " href="#">Mostra il testo nella lingua originale</a>
-                    </p>
-
-                    <h4 class="fw-bold  my-4">A proposito di questo alloggio</h4>
-                    <p>A proposito di questo alloggio
-                        Nel centro storico di Milano, a pochi passi da Brera, il Duomo, in un’atmosfera informale,
-                        appartamento pulito,
-                        offriamo una camera privata con ampio letto, armadio, scrivania, WI-FI. Bagno,
-                        salone con angolo cottura sono in condivisione. Io che sono il proprietario,
-                        il mio compagno, la nostra gatta viviamo nell’appartamento. Via aspettiamo nel cuore di Milano.
-                    </p>
-
-                    <p><span class="fw-bold">Lo spazio </span> <br> Vi troverete fra la fermata di metrò di Lanza e
-                        Moscova. A pochi passi da Brera, dieci....</p>
-                    <div class="btn btn-secondary  mb-5 px-3 py-2">
-                        <span class="fw-bold text-black">Mostra altro</span>
-                    </div>
-
-                    <hr>
-
-                    <h4>Dove dormirai</h4>
-
-                    <img src="./assets/assets/letto.avif" class=" img-fluid rounded-3" alt="">
-                    <p class="mt-3 mb-5"><span class="fw-bold ">Camera da letto</span> <br><span
-                            class="text-secondary">1
-                            letto matrimoniale</span></p>
-
-                    <hr>
-
-                    <div class="container">
-                        <div class="row">
-                            <h3 class="fw-bold">Cosa troverai</h3>
-                            <div class="list-optional d-flex align-items-center gap-3 fs-4">
-                                <div class="col-6">
-                                    <div class="d-flex gap-3">
-                                        <i class="bi bi-wifi"></i>
-                                        <p>Wi-fi</p>
-                                    </div>
-                                    <div class="d-flex  gap-3">
-                                        <img src="./assets/assets/ascensore.png" class="host" alt="">
-                                        <p>Ascensore</p>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <i class="bi bi-snow"></i>
-                                        <p>Aria condizionata</p>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <img src="./assets/assets/frigorifero.png" class="host" alt="">
-                                        <p>Frigorifero</p>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="d-flex gap-3">
-                                        <img src="./assets/assets/spazio di lavoro.png" class="host" alt="">
-                                        <p>Spazio di lavoro dedicato
-                                        </p>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <img src="./assets/assets/lavatrice.png" class="host" alt="">
-                                        <p>Lavatrice</p>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <img src="./assets/assets/asciugacapelli.png" class="host" alt="">
-                                        <p>Asciugacapelli</p>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <img src="./assets/assets/porta.png" class="host" alt="">
-                                        <p class=" text-decoration-line-through"> Serratura della porta della camera da
-                                            letto</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" buttonList btn btn-secondary text-black fw-bold mb-5 p-2">
-                            <span>Mostra tutti e 17 i servizi</span>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <h4 class="mt-5">Seleziona la data di check-in</h4>
-                    <p>Aggiungi le date del tuo viaggio per conoscere il prezzo esatto</p>
-
-                    <div class="calendar">
-                        <div class="header">
-                            <button id="prev-btn">&lt</button>
-                            <h1 id="month-year"></h1>
-                            <button id="next-btn">&gt</button>
-
-                        </div>
-                        <table id="calendar-table">
-                            <thead>
-                                <tr>domenica</tr>
-                                <td></td>
-                                <tr>lunedi</tr>
-                                <td></td>
-                                <tr>martedi</tr>
-                                <td></td>
-                                <tr>mercoledi</tr>
-                                <td></td>
-                                <tr>giovedi</tr>
-                                <td></td>
-                                <tr>venerdi</tr>
-                                <td></td>
-                                <tr>sabato</tr>
-                                <td></td>
-                            </thead>
-                            <tbody id="calendar-body">
-
-                            </tbody>
-                        </table>
-                    </div>
+              <h3 class="fw-bold">Cosa troverai</h3>
+              <div class="list-optional d-flex align-items-center gap-3 fs-4">
+                <div class="col-6">
+                  <div class="d-flex gap-3">
+                    <i class="bi bi-wifi"></i>
+                    <p>Wi-fi</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./assets/assets/ascensore.png"
+                      class="host"
+                      alt=""
+                    />
+                    <p>Ascensore</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <i class="bi bi-snow"></i>
+                    <p>Aria condizionata</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./assets/assets/frigorifero.png"
+                      class="host"
+                      alt=""
+                    />
+                    <p>Frigorifero</p>
+                  </div>
                 </div>
-                <hr>
+
+                <div class="col-6">
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./assets/assets/spazio di lavoro.png"
+                      class="host"
+                      alt=""
+                    />
+                    <p>Spazio di lavoro dedicato</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./assets/assets/lavatrice.png"
+                      class="host"
+                      alt=""
+                    />
+                    <p>Lavatrice</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img
+                      src="./assets/assets/asciugacapelli.png"
+                      class="host"
+                      alt=""
+                    />
+                    <p>Asciugacapelli</p>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/assets/porta.png" class="host" alt="" />
+                    <p class="text-decoration-line-through">
+                      Serratura della porta della camera da letto
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div
+              class="buttonList btn btn-secondary text-black fw-bold mb-5 p-2"
+            >
+              <span>Mostra tutti e 17 i servizi</span>
+            </div>
+          </div>
+          <hr />
+
+          <h4 class="mt-5">Seleziona la data di check-in</h4>
+          <p>Aggiungi le date del tuo viaggio per conoscere il prezzo esatto</p>
+
+          <div class="calendar">
+            <div class="header">
+              <button id="prev-btn">&lt</button>
+              <h1 id="month-year"></h1>
+              <button id="next-btn">&gt</button>
+            </div>
+            <table id="calendar-table">
+              <thead>
+                <tr>
+                  domenica
+                </tr>
+                <td></td>
+                <tr>
+                  lunedi
+                </tr>
+                <td></td>
+                <tr>
+                  martedi
+                </tr>
+                <td></td>
+                <tr>
+                  mercoledi
+                </tr>
+                <td></td>
+                <tr>
+                  giovedi
+                </tr>
+                <td></td>
+                <tr>
+                  venerdi
+                </tr>
+                <td></td>
+                <tr>
+                  sabato
+                </tr>
+                <td></td>
+              </thead>
+              <tbody id="calendar-body"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="fw-bold d-flex justify-content-center">
-            <img src="./assets/assets/foglia sinistra.avif" class="img-fluid img1" alt="">
-            <span class="bg-info recention">4.94</span>
-            <img src="./assets/assets/fogliadestra.avif " class="img-fluid img1" alt="">
-        </div>
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <span class="fw-bold">Amato dagli ospiti</span>
-            <p>Questo alloggio è uno dei più amati dagli ospiti
-                in base a valutazioni,
-                recensioni e affidabilità</p>
-        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="fw-bold d-flex justify-content-center">
+      <img
+        src="./assets/assets/foglia sinistra.avif"
+        class="img-fluid img1"
+        alt=""
+      />
+      <span class="bg-info recention">4.94</span>
+      <img
+        src="./assets/assets/fogliadestra.avif "
+        class="img-fluid img1"
+        alt=""
+      />
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <span class="fw-bold">Amato dagli ospiti</span>
+      <p>
+        Questo alloggio è uno dei più amati dagli ospiti in base a valutazioni,
+        recensioni e affidabilità
+      </p>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-        
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-            crossorigin="anonymous"></script>
-            <script src="./secondPage.js"></script>
-        </body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./secondPage.js"></script>
+  </body>
 </html>
