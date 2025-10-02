@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
 }
-
+/*----------------Navbar--------------------------*/
 .navbar {
   background: #ffffff;
   background: radial-gradient(
@@ -92,7 +92,7 @@ body {
   background-color: #00000030;
   border-radius: 20px;
 }
-
+/*----------------Second-Navbar--------------------------*/
 .container-second-navbar {
   display: flex;
   justify-content: center;
@@ -105,8 +105,41 @@ body {
 }
 
 .second-navbar {
-  width: 55rem;
-  height: 4.5rem;
+
+    width: 45rem;
+    height: 3.5rem;
+    border-radius: 50px;
+    border: 1px solid #3a3a3a20;
+    box-shadow: 0 0 8px #00000037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin: 20px;
+}
+
+.second-navbar-item{
+    border-left: 1px solid #3a3a3a51;
+    padding: 10px 15px;
+    transition: .3s;
+}
+
+.second-navbar-item:first-child {
+    border-left: none;
+    margin-left: 1rem;
+}
+
+.second-navbar-item:hover {
+    background-color: #ececec;
+    border-radius: 50px;
+    border-bottom: 0.5px solid #000;
+    border-top: 0.5px solid #000;
+}
+
+.second-navbar-search {
+    background-color: rgb(244, 88, 88);
+    width: 1rem;
+    height: 1rem;
   border-radius: 50px;
   border: 1px solid #3a3a3a;
   box-shadow: 0 0 8px #00000037;
@@ -115,23 +148,6 @@ body {
   align-items: center;
   font-size: 17px;
   margin: 20px;
-}
-
-.second-navbar-item {
-  border-left: 1px solid #3a3a3a;
-  padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.second-navbar-item:first-child {
-  border-left: none;
-}
-
-.second-navbar-item:hover {
-  background-color: #ececec;
-  border-radius: 50px;
-  border-bottom: 0.5px solid black;
-  border-top: 0.5px solid black;
 }
 
 .second-navbar-item img {
@@ -150,16 +166,21 @@ body {
   margin-bottom: 25px;
 }
 
+.dropdown-toggle::after {
+  content: none;
+}
+
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 150px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  width: 150px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 190px;
+    margin-left: -7rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #toggleMenu:checked + .dropdown-toggle + .dropdown-menu {
@@ -254,6 +275,53 @@ background: linear-gradient(
     rgb(255, 254, 254)   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
   );
 }
+/*----------------cards--------------------------*/
+.container-main{
+  margin: 2rem;
+}
+
+.swiper-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 20px 0;
+  cursor: pointer;
+  display: inline;
+}
+
+
+.container-arrow{
+  margin: 1rem;
+}
+
+.swiper-right-arrow {
+  background-color: #5e5d5d21;
+  border-radius: 50px;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.swiper-left-arrow {
+  background-color: #5e5d5d21;
+  border-radius: 50px;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.swiper-right-arrow:hover, 
+.swiper-left-arrow:hover{
+  transform: scale(1.10);
+  background-color: #5e5d5d7b;
+}
 
 
 /*CARD E SWIPER*/
@@ -335,18 +403,10 @@ background: linear-gradient(
   margin-bottom: 10px;
 }
 
-.swiper-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  padding: 20px 0;
-  cursor: pointer;
-  display: inline;
-}
-
 footer {
   background-color: #ffeded;
 }
+
 footer .top-footer ul,
 footer .down-footer ul {
   list-style: none;
