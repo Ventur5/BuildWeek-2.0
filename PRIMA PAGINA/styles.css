@@ -6,6 +6,7 @@ body {
 .navbar {
   background: #ffffff;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .navbar-brand img {
@@ -95,12 +96,12 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  max-width: 560px;
+  max-width: 160px;
   margin: 0 auto;
 }
 
 .second-navbar {
-    height: 3.5rem;
+    height: 5rem;
     border-radius: 50px;
     border: 1px solid #3a3a3a20;
     box-shadow: 0 0 8px #00000037;
@@ -108,6 +109,21 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 17px;
+}
+@media (max-width: 1024px) {
+  .second-navbar {
+    height: 4.5rem;
+    font-size: 15px;
+    padding: 0 10px;
+    
+  }
+  .second-navbar-item img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .second-navbar-item {
+    width: 150px;
+  }
 }
 
 .second-navbar-item{
@@ -160,7 +176,7 @@ body {
 
 .dropdown-menu {
     position: absolute;
-    top: 120px;
+    top: 150px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -224,6 +240,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100vw;
   height: 700px;
   position: relative;
+  margin-top: 20px;
 }                          
 
 .container-img-hero img {
