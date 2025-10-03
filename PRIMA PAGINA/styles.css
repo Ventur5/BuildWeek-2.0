@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
 /*----------------Navbar--------------------------*/
 .navbar {
   background: #ffffff;
@@ -46,9 +47,11 @@ body {
   color: #000;
   border-bottom: 3px solid #000;
 }
+
 .navbarbtn-text {
   margin-top: 0.5rem;
 }
+
 .navbar-lastbtn {
   display: flex;
   gap: 20px;
@@ -90,6 +93,7 @@ body {
   background-color: #00000030;
   border-radius: 20px;
 }
+
 /*----------------Second-Navbar--------------------------*/
 .container-second-navbar {
   display: flex;
@@ -115,7 +119,7 @@ body {
     height: 4.5rem;
     font-size: 15px;
     padding: 0 10px;
-    
+
   }
   .second-navbar-item img {
     width: 2.2rem;
@@ -126,28 +130,28 @@ body {
   }
 }
 
-.second-navbar-item{
-    border-left: 1px solid #3a3a3a51;
-    padding: 10px 15px;
-    transition: .3s;
+.second-navbar-item {
+  border-left: 1px solid #3a3a3a51;
+  padding: 10px 15px;
+  transition: .3s;
 }
 
 .second-navbar-item:first-child {
-    border-left: none;
-    margin-left: 1rem;
+  border-left: none;
+  margin-left: 1rem;
 }
 
 .second-navbar-item:hover {
-    background-color: #ececec;
-    border-radius: 50px;
-    border-bottom: 0.5px solid #000;
-    border-top: 0.5px solid #000;
+  background-color: #ececec;
+  border-radius: 50px;
+  border-bottom: 0.5px solid #000;
+  border-top: 0.5px solid #000;
 }
 
 .second-navbar-search {
-    background-color: rgb(244, 88, 88);
-    width: 1rem;
-    height: 1rem;
+  background-color: rgb(244, 88, 88);
+  width: 1rem;
+  height: 1rem;
   border-radius: 50px;
   border: 1px solid #3a3a3a;
   box-shadow: 0 0 8px #00000037;
@@ -183,7 +187,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#toggleMenu:checked + .dropdown-toggle + .dropdown-menu {
+#toggleMenu:checked+.dropdown-toggle+.dropdown-menu {
   display: block;
 }
 
@@ -243,6 +247,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 20px;
 }                          
 
+
 .container-img-hero img {
   width: 100%;
   height: 100%;
@@ -250,46 +255,50 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   overflow: hidden;
 }
 
-.container-img-hero::after, 
+.container-img-hero::after,
 .container-img-hero::before {
   position: absolute;
   content: "";
   left: 0;
   width: 100vw;
   height: 60px;
-  
+
 }
-.container-img-hero::after{
-top: 0;
-background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0),
-    white   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
-  );
+
+.container-img-hero::after {
+  top: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0),
+      white
+      /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
+    );
 }
-.container-img-hero::before{
-bottom: 0;
-background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    
-    rgb(255, 254, 254)   /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
-  );
+
+.container-img-hero::before {
+  bottom: 0;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+
+      rgb(255, 254, 254)
+      /*SFONDO NAV CON GRADIENT CIRCLE QUINDI LA SFUMATURA SI VEDE*/
+    );
 }
+
 /*----------------Hero MediaQueries--------------------------*/
 @media (max-width: 768px) {
   .container-img-hero {
     height: 300px;
     width: 100%;
   }
-  .container-img-hero::after, 
+
+  .container-img-hero::after,
   .container-img-hero::before {
     width: 100%;
   }
 }
 
 /*----------------cards-carousel--------------------------*/
-.container-main{
+.container-main {
   margin: 2rem;
 }
 
@@ -299,11 +308,10 @@ background: linear-gradient(
   margin: 1rem;
   padding: 20px 0;
   cursor: pointer;
-  display: inline;
 }
 
 
-.container-arrow{
+.container-arrow {
   margin: 1rem;
 }
 
@@ -330,14 +338,18 @@ background: linear-gradient(
   transition: .3s;
 }
 
-.swiper-right-arrow:hover, 
-.swiper-left-arrow:hover{
+.swiper-right-arrow:hover,
+.swiper-left-arrow:hover {
   transform: scale(1.10);
   background-color: #5e5d5d7b;
 }
 
 
 /*CARD E SWIPER*/
+.swiper-slide {
+  display: flex;
+}
+
 .airbnb-card {
   display: flex;
   flex-direction: column;
@@ -347,14 +359,13 @@ background: linear-gradient(
 }
 
 .card-img-container {
-  width: 11rem;
+  width: 100%;
   height: 11rem;
 }
 
 .card-img-container img {
   width: 100%;
   height: 100%;
-  /* eventualmente usare aspect-ratio per l'img */
   object-fit: cover;
   border-radius: 18px;
 }
@@ -382,17 +393,21 @@ background: linear-gradient(
     font-size: 17px;
     margin-left: 0;
   }
+
   .container-card-carousel {
     padding: 0;
   }
+
   .airbnb-card {
     width: 250px;
   }
+
   .swiper-wrapper {
     padding-left: 15px;
     display: flex;
   }
-} 
+}
+
 /*-------uso important per no modificare il js pd; angelo:) --------------------------*/
 @media (max-width: 768px) {
   .swiper-slide {
@@ -456,9 +471,11 @@ footer .down-footer ul {
 footer .top-footer ul li {
   padding-bottom: 12px;
 }
+
 footer .top-footer ul li:nth-of-type(1) {
   font-weight: bold;
 }
+
 footer .top-footer ul li a,
 footer .down-footer ul li a {
   color: #000;
@@ -521,6 +538,7 @@ footer .down-footer p {
   flex-direction: column;
   z-index: 100;
 }
+
 .close-value,
 .close-language {
   color: #000;
