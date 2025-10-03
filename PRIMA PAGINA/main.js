@@ -473,16 +473,24 @@ const romeSwiper = new Swiper(".rome-swiper", {
     prevEl: ".rome-left-arrow",
   },
 
-  slidesPerView: 7,
-    breakpoints:{
-    0:{
-      slidesPerView:2,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-    768:{
-      slidesPerView:4
+    425: {
+      slidesPerView: 3,
     },
-    1200:{
-      slidesPerView:7
+    768: {
+      slidesPerView: 4
+    },
+    1024: {
+      slidesPerView: 5
+    },
+    1200: {
+      slidesPerView: 6
+    },
+    1440: {
+      slidesPerView: 7
     }
   }
 });
@@ -494,17 +502,24 @@ const turinSwiper = new Swiper(".turin-swiper", {
     prevEl: ".turin-left-arrow",
   },
 
-  slidesPerView: 7,
- 
-  breakpoints:{
-    0:{
-      slidesPerView:2,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-    768:{
-      slidesPerView:4
+    425: {
+      slidesPerView: 3,
     },
-    1200:{
-      slidesPerView:7
+    768: {
+      slidesPerView: 4
+    },
+    1024: {
+      slidesPerView: 5
+    },
+    1200: {
+      slidesPerView: 6
+    },
+    1440: {
+      slidesPerView: 7
     }
   }
 });
@@ -516,16 +531,24 @@ const milanSwiper = new Swiper(".milan-swiper", {
     prevEl: ".milan-left-arrow",
   },
 
-  slidesPerView: 7,
-    breakpoints:{
-    0:{
-      slidesPerView:2,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-    768:{
-      slidesPerView:4
+    425: {
+      slidesPerView: 3,
     },
-    1200:{
-      slidesPerView:7
+    768: {
+      slidesPerView: 4
+    },
+    1024: {
+      slidesPerView: 5
+    },
+    1200: {
+      slidesPerView: 6
+    },
+    1440: {
+      slidesPerView: 7
     }
   }
 });
@@ -543,7 +566,7 @@ milanRooms.forEach((room) => {
 });
 
 
- //FUNZIONE PER MODALI
+//FUNZIONE PER MODALI
 const btnModalLanguage = document.getElementById("button-language");
 const modalLanguage = document.querySelector(".modal-language");
 const closeModalLanguage = document.querySelector(".close-language");
