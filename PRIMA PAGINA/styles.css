@@ -5,7 +5,7 @@ body {
 /*----------------Navbar--------------------------*/
 .navbar {
   background: #ffffff;
-  background-color: white
+  background-color: white;
 }
 
 .navbar-brand img {
@@ -95,11 +95,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .second-navbar {
-
-    width: 45rem;
     height: 3.5rem;
     border-radius: 50px;
     border: 1px solid #3a3a3a20;
@@ -108,7 +108,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 17px;
-    margin: 20px;
 }
 
 .second-navbar-item{
@@ -159,14 +158,10 @@ body {
 }
 
 .dropdown-menu {
-
     position: absolute;
-    top: 190px;
-    margin-left: -7rem;
+    top: 120px;
     background-color: #ffffff;
     border: 1px solid #ccc;
-    width: 350px;
-    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

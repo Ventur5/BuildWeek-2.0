@@ -15,14 +15,88 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 40px;
-  padding: 0.5rem;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   border: 1px solid #ddd;
   gap: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
   height: 3rem;
+  margin-left: 80px;
+}
+
+.second-navbar-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 991px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .second-navbar-item span {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+  .navbar-lastbtn h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+  .navbar-lastbtn h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .second-navbar-item span {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
+  .navbar-lastbtn h6 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
 }
 
 .section-navBar {
@@ -60,66 +134,65 @@
 .second-navbar-item:hover {
   cursor: pointer;
 }
- /*----------------------IMG----------------*/
+/*----------------------IMG----------------*/
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .image-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .image-container:hover::after {
-    background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .imgtitle-left {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .imgtitle-bordertop {
-    border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .imgtitle-borderbottom {
-    border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 /*-----------------TITOLO E SOTTOTILO------------------*/
 
-@media (max-width: 575px)  {
-  .title-2 p{
+@media (max-width: 575px) {
+  .title-2 p {
     font-family: 1rem;
     color: #817e7e;
     text-align: center;
   }
 }
 
-@media (min-width: 576px)  {
+@media (min-width: 576px) {
   .title-2 p:nth-of-type(1) {
     font-size: 1.5rem;
     color: black;
-    font-weight:600;
+    font-weight: 600;
   }
 }
 
-.p-svg{
-line-height: 20px;
-text-align: center;
-
+.p-svg {
+  line-height: 20px;
+  text-align: center;
 }
-svg{
+svg {
   height: 50px;
 }
 /*CONTAINER RECENSIONI*/
-.container-recensioni{
+.container-recensioni {
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
@@ -127,32 +200,31 @@ svg{
   cursor: pointer;
 }
 
-.container-recensioni P{
+.container-recensioni P {
   font-weight: 600;
 }
 
-@media (max-width: 767px)  {
-  .container-recensioni{
-   border: none;
+@media (max-width: 767px) {
+  .container-recensioni {
+    border: none;
   }
 }
 
-@media (min-width: 768px)  {
-  .container-recensioni{
- border: 1px solid grey;
-  border-radius: 10px;
+@media (min-width: 768px) {
+  .container-recensioni {
+    border: 1px solid grey;
+    border-radius: 10px;
   }
 }
 
 /*------------- SEZIONE HOST------ AIUTO ICONA TONDA*/
-.host-section div:nth-of-type(1){
-width: 60px;
-height: 60px;
-border-radius: 50%;
-
+.host-section div:nth-of-type(1) {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
-.host-section div:nth-of-type(1) img{
+.host-section div:nth-of-type(1) img {
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
@@ -160,21 +232,17 @@ border-radius: 50%;
 }
 
 .host-section div p:nth-of-type(1) {
- font-weight: 600;
- font-size: 16px;
+  font-weight: 600;
+  font-size: 16px;
   margin: 0;
 }
 .host-section div p:nth-of-type(2) {
- color:#817e7e ;
+  color: #817e7e;
   font-size: 13px;
   margin: 0;
- 
 }
 
-
-
-
-.service i{
+.service i {
   font-size: 35px;
   padding: 10px;
 }
@@ -184,81 +252,80 @@ border-radius: 50%;
   margin: 0;
 }
 
-.service p:nth-of-type(1){
+.service p:nth-of-type(1) {
   font-weight: 600;
   margin: 0;
 }
 
-.service p:nth-of-type(2){
-  color:#817e7e ;
+.service p:nth-of-type(2) {
+  color: #817e7e;
   font-size: 13px;
   margin: 0;
 }
 
-.description button, .section-icons button {
+.description button,
+.section-icons button {
   background-color: #d9d8d8;
   font-weight: 600;
   border-radius: 15px;
   margin-top: 20px;
 }
 
-.description button:hover, .section-icons button{
+.description button:hover,
+.section-icons button {
   background-color: #cdcdcd;
   font-weight: 600;
 }
 
-@media (max-width: 767px)  {
-  .description button, .section-icons button {
+@media (max-width: 767px) {
+  .description button,
+  .section-icons button {
     width: 100%;
   }
 }
 
-@media (min-width: 768px)  {
-  .description button, .section-icons button {
-    width: auto
+@media (min-width: 768px) {
+  .description button,
+  .section-icons button {
+    width: auto;
   }
 }
 
-.maps{
- 
+.thumbnails-main-container {
+  max-width: 800px;
 }
 
-
-.thumbnails-main-container {
-    max-width: 800px;
-}  
-
 .calendar {
-    max-width: 75%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid white;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 #calendar-table {
-    width: 100%;
+  width: 100%;
 }
 
 #calendar-table th,
 #calendar-table td {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 #prev-btn,
 #next-btn {
-    background-color: none;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+  background-color: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .search-icon-wrapper {
@@ -307,21 +374,21 @@ border-radius: 50%;
 }
 
 #month-year {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 thead tr {
-    padding: 20ox;
-    margin: 20px;
+  padding: 20ox;
+  margin: 20px;
 }
 
 .recention {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .img1 {
-    width: 100px;
+  width: 100px;
 }
 
 .last-btn img {
@@ -421,4 +488,3 @@ thead tr {
 .img1 {
   width: 100px;
 }
-
