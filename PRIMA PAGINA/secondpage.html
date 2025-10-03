@@ -1,228 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="utf-8" />
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <title>Airbnb | Stanza Milano</title>
-    
+
     <link
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaXkdtkvlTpDiPo0uHyuaaUN_u9XbZ_CbJg&s"
     />
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    
+
     <link rel="stylesheet" href="./secondPage.css" />
   </head>
 
   <body>
+    <!----------- navbar ------------>
 
-    <!----------- navbar ------------> 
-    
     <div class="container">
-    <div class="container-second-navbar d-none d-sm-flex">
-      <img src="./assets/logo-pink.png" class="img-pinkLogo" alt="Logo" />
+      <div class="container-second-navbar d-none d-sm-flex">
+        <img src="./assets/logo-pink.png" class="img-pinkLogo" alt="Logo" />
 
-      <div class="second-navbar">
-        <div class="second-navbar-item">
-          <span>Ovunque</span>
-        </div>
-
-        <div class="second-navbar-item">
-          <span>Qualche settimana</span>
-        </div>
-
-        <div class="second-navbar-item with-icon">
-          <span>Aggiungi ospiti</span>
-          <div class="search-icon-wrapper">
-            <img
-              class="second-navbar-search"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ic_search_white_48px.svg/1200px-Ic_search_white_48px.svg.png"
-              alt="Cerca"
-            />
+        <div class="second-navbar">
+          <div class="second-navbar-item">
+            <span>Ovunque</span>
           </div>
-        </div>
-      </div>
 
-      <div class="navbar-lastbtn">
-        <h6 class="host-text">Inizia a ospitare</h6>
-
-        <div class="last-btn icon-btn" title="Lingua / mondo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#000000"
-          >
-            <path
-              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
-            />
-          </svg>
-        </div>
-
-        <div class="last-btn icon-btn" title="Menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#000000"
-          >
-            <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-</div>
-    <div class="container">
-      <hr />
-
-      <div class="conteiner-fluid">
-        <div class="d-flex justify-content-between align-items-center gap-3">
-          <h1>In centro a pochi passi da Brera</h1>
-          <div class="d-flex gap-3">
-            <i class="bi bi-box-arrow-up"></i>
-            <a href="#" class="text-black">Condividi</a>
-            <i class="bi bi-heart"></i>
-            <a href="#" class="text-black">Salva</a>
+          <div class="second-navbar-item">
+            <span>Qualche settimana</span>
           </div>
-        </div>
-        <div
-          class="content d-flex justify-content-center align-items-center gap-4"
-        >
-          <div class="row">
-            <div class="col-6">
+
+          <div class="second-navbar-item with-icon">
+            <span>Aggiungi ospiti</span>
+            <div class="search-icon-wrapper">
               <img
-                src="./assets/assets/1grande.avif"
-                class="imgTitle imgtitle-left img-fluid h-100 border"
-                alt=""
+                class="second-navbar-search"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ic_search_white_48px.svg/1200px-Ic_search_white_48px.svg.png"
+                alt="Cerca"
               />
             </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
-              <div class="row">
-                <div class="col-3">
-                  <img
-                    src="./assets/assets/2.webp "
-                    class="imgTitle img-fluid h-100"
-                    width="300"
-                    height="200"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="./assets/assets/3.webp"
-                    class="imgTitle imgtitle-bordertop img-fluid h-100"
-                    width="300"
-                    height="200"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <img
-                    src="./assets/assets/5.webp"
-                    class="imgTitle img-fluid"
-                    width="300"
-                    height="200"
-                    alt=""
-                  />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="./assets/assets/2.webp"
-                    class="imgTitle img-fluid imgtitle-borderbottom h-100"
-                    width="300"
-                    height="200"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <div class="navbar-lastbtn">
+          <h6 class="host-text">Inizia a ospitare</h6>
+
+          <div class="last-btn icon-btn" title="Lingua / mondo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
+              />
+            </svg>
+          </div>
+
+          <div class="last-btn icon-btn" title="Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
           </div>
         </div>
       </div>
     </div>
 
     <!----------- parte principale ----------->
-    
-  <div class="container">
-    <div class="row align-items-end mb-2">
-      <div class="col-9 p-0">
-        <h1 class="m-0 d-none d-sm-block">In centro a pochi passi da Brera</h1>
-      </div>
-      <div class="col-3 p-0">
-        <div class="d-flex justify-content-end gap-3">
-          <div class="d-flex align-items-center gap-2">
-            <i class="bi bi-box-arrow-up"></i>
-            <a href="#" class="text-black small d-none d-sm-block">Condividi</a>
+
+    <div class="container">
+      <div class="row align-items-end mb-2">
+        <div class="col-9 p-0">
+          <h1 class="m-0 d-none d-sm-block">
+            In centro a pochi passi da Brera
+          </h1>
+        </div>
+        <div class="col-3 p-0">
+          <div class="d-flex justify-content-end gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-box-arrow-up"></i>
+              <a href="#" class="text-black small d-none d-sm-block"
+                >Condividi</a
+              >
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-heart"></i>
+              <a href="#" class="text-black small d-none d-sm-block">Salva</a>
+            </div>
           </div>
-          <div class="d-flex align-items-center gap-2">
-            <i class="bi bi-heart"></i>
-            <a href="#" class="text-black small d-none d-sm-block">Salva</a>
+        </div>
+      </div>
+
+      <div class="row flex-nowrap gap-2">
+        <div class="col-12 col-sm-6 p-0">
+          <div class="image-container d-flex h-100">
+            <img
+              class="room-img imgtitle-left img-fluid object-fit-cover border"
+              src="./assets/assets/1grande.avif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 d-none d-sm-block p-0">
+          <div class="d-flex gap-2 mb-2">
+            <div class="col-6 p-0">
+              <div class="image-container">
+                <img
+                  class="room-img img-fluid"
+                  src="./assets/assets/2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 p-0">
+              <div class="image-container">
+                <img
+                  class="room-img imgtitle-bordertop img-fluid"
+                  src="./assets/assets/3.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="col-6 p-0">
+              <div class="image-container">
+                <img
+                  class="room-img img-fluid"
+                  src="./assets/assets/5.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 p-0">
+              <div class="image-container">
+                <img
+                  class="room-img img-fluid imgtitle-borderbottom"
+                  src="./assets/assets/2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-------SOTTO IMMAGINE--------------------->
 
-    <div class="row flex-nowrap gap-2">
-      <div class="col-12 col-sm-6 p-0">
-        <div class="image-container d-flex h-100">
-          <img class="room-img imgtitle-left img-fluid object-fit-cover border" src="./assets/assets/1grande.avif"
-            alt="">
+    <div class="container px-3 py-2">
+      <div class="row">
+        <div class="col-12 col-md-8 d-flex flex-column gap-1">
+          <div class="title-2">
+            <h1 class="m-0 d-sm-none text-center text-sm-left">
+              In centro a pochi passi da Brera
+            </h1>
+            <p class="m-0">Stanza &bull; Milano, Italia</p>
+            <p class="m-0">1 letto matrimoniale &bull; Bagno condiviso</p>
+          </div>
+          <!--------RECENSIONI----------->
+          <div
+            class="container-recensioni d-flex justify-content-around align-items-center gap-2"
+          >
+            <!--SVG-ALLORI-->
+            <div class="container-svg-text gap-1 d-flex align-items-center order-2 order-sm-1">
+              <svg
+                id="Livello_1"
+                data-name="Livello 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 184.62 271.11"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #000;
+                      stroke-miterlimit: 10;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M240.86,327.71c-25.87,0-44.78,12.17-49.3,31.48a10.72,10.72,0,0,1-1.82,4.61c-19.29,23.05-28.63,48.31-29.74,75.29-1.61,39.17,12,74.66,47.38,104.5,22.41,18.89,50.17,30.59,84.22,33.21,3.45.27,7,0,10.44,0,.09-.6.17-1.2.25-1.79a37.23,37.23,0,0,0-5.56-1.19c-36.3-2.22-66.34-13.71-89.37-34.61-52.64-47.74-59.28-118.53-16.42-171.31a18.38,18.38,0,0,1,7.18-4.91c11.06-4.41,20.58-10.09,27.69-17.79C231,339.66,235.63,333.83,240.86,327.71ZM134,379.24c-1,7-2.63,13.58-2.77,20.18-.14,6.43.09,13.1,2.23,19.27,2.73,7.87,8.63,14.53,21.84,16.32C156.24,414.69,155,395.37,134,379.24ZM272.27,579.38c-20.27-6.65-45.07-2.12-62.81,12,10.49,2.21,20.12,5,30.1,6.15C256.06,599.42,268.76,592,272.27,579.38ZM119,438.19c3.34,10.37,5.68,20.38,10,29.9,2.14,4.75,7.22,9.1,12.16,12.72s11.89,5.05,19.65,2.63C154,465,146.74,447.15,119,438.19Zm65.63,89.13c-13.54-15.32-27.28-29.39-54.72-28.84,2.5,6.75,14.37,22.66,21.47,27a52.18,52.18,0,0,0,15,5.91C173,533,179.09,531.11,184.63,527.32ZM223,560.79c-17.1-12.95-43.29-16.91-63.4-8.8,10,5.76,18.93,11.94,29.14,16.53C201.62,574.3,216.43,570.44,223,560.79ZM167.87,387.3c11.93-15.37,13-43.25,2-58.72-4,7.08-8.69,13.52-11.27,20.39a56.49,56.49,0,0,0-3.68,20.38C155,376.57,159.2,383,167.87,387.3Zm39.57,87.22c-21.34,10.73-27.35,34.5-11.75,44.91C204.11,512.33,211.71,504.33,207.44,474.52ZM210.3,409c-25.8-3.4-44,8.57-41.23,26.95C192.45,435.28,200.1,421.36,210.3,409Zm20.49,140.72c9.7-16.28,2.8-31.15-6.41-46.06C209.32,522.06,212.12,542.34,230.79,549.71ZM202.3,441.51c-24.53,4.28-38.83,24.1-27.93,38.5C195.25,472,197.86,456.62,202.3,441.51Zm49.46,83.84c-7.24,22.45,1.44,38,23.3,41.22C278.24,549.47,267.11,536.94,251.76,525.35Zm-22-144c-21.14-12.05-44.53-6.44-48.71,11.44C194.13,397.26,205.65,397.51,229.79,381.32Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M240.86,327.71c-5.23,6.12-9.89,12-15.05,17.53-7.11,7.7-16.63,13.38-27.69,17.79a18.38,18.38,0,0,0-7.18,4.91c-42.86,52.78-36.22,123.57,16.42,171.31,23,20.9,53.07,32.39,89.37,34.61a37.23,37.23,0,0,1,5.56,1.19c-.08.59-.16,1.19-.25,1.79-3.48,0-7,.23-10.44,0-34.05-2.62-61.81-14.32-84.22-33.21-35.41-29.84-49-65.33-47.38-104.5,1.11-27,10.45-52.24,29.74-75.29a10.72,10.72,0,0,0,1.82-4.61C196.08,339.88,215,327.67,240.86,327.71Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M134,379.24c21,16.13,22.23,35.45,21.3,55.77-13.21-1.79-19.11-8.45-21.84-16.32-2.14-6.17-2.37-12.84-2.23-19.27C131.38,392.82,133,386.23,134,379.24Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M272.27,579.38c-3.51,12.63-16.21,20-32.71,18.14-10-1.15-19.61-3.94-30.1-6.15C227.2,577.26,252,572.73,272.27,579.38Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M119,438.19c27.74,9,35,26.82,41.8,45.25-7.76,2.42-14.58,1.09-19.65-2.63s-10-8-12.16-12.72C124.68,458.57,122.34,448.56,119,438.19Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M184.63,527.32c-5.54,3.79-11.65,5.64-18.29,4.07a52.18,52.18,0,0,1-15-5.91c-7.1-4.34-19-20.25-21.47-27C157.35,497.93,171.09,512,184.63,527.32Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M223,560.79c-6.59,9.65-21.4,13.51-34.26,7.73-10.21-4.59-19.13-10.77-29.14-16.53C179.73,543.88,205.92,547.84,223,560.79Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M167.87,387.3c-8.67-4.31-12.88-10.73-13-17.95A56.49,56.49,0,0,1,158.56,349c2.58-6.87,7.25-13.31,11.27-20.39C180.87,344.05,179.8,371.93,167.87,387.3Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M207.44,474.52c4.27,29.81-3.33,37.81-11.75,44.91C180.09,509,186.1,485.25,207.44,474.52Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M210.3,409c-10.2,12.37-17.85,26.29-41.23,26.95C166.33,417.56,184.5,405.59,210.3,409Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M230.79,549.71c-18.67-7.37-21.47-27.65-6.41-46.06C233.59,518.56,240.49,533.43,230.79,549.71Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M202.3,441.51c-4.44,15.11-7.05,30.49-27.93,38.5C163.47,465.61,177.77,445.79,202.3,441.51Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M251.76,525.35c15.35,11.59,26.48,24.12,23.3,41.22C253.2,563.33,244.52,547.8,251.76,525.35Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+                <path
+                  class="cls-1"
+                  d="M229.79,381.32c-24.14,16.19-35.66,15.94-48.71,11.44C185.26,374.88,208.65,369.27,229.79,381.32Z"
+                  transform="translate(-118.23 -327.21)"
+                />
+              </svg>
+
+              <p class="p-svg fs-6 m-0">Amato<br />dagli ospiti</p>
+
+              <svg
+                id="Livello_1"
+                data-name="Livello 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 176.47 271.11"
+              >
+                <path
+                  d="M399.23,326.37c24.72,0,42.79,12.18,47.11,31.49a11.17,11.17,0,0,0,1.74,4.61c18.43,23,27.35,48.3,28.41,75.28,1.55,39.17-11.43,74.66-45.27,104.5-21.41,18.89-47.94,30.59-80.48,33.22-3.29.26-6.65,0-10,0-.08-.59-.16-1.19-.23-1.79a34.11,34.11,0,0,1,5.31-1.18c34.69-2.23,63.39-13.71,85.4-34.61,50.3-47.74,56.65-118.54,15.69-171.32a17.66,17.66,0,0,0-6.86-4.91c-10.56-4.4-19.67-10.09-26.46-17.79C408.68,338.33,404.23,332.49,399.23,326.37Zm102.1,51.53c1,7,2.52,13.58,2.65,20.19.13,6.43-.08,13.1-2.13,19.27-2.61,7.87-8.25,14.52-20.87,16.31C480.09,413.36,481.28,394,501.33,377.9ZM369.22,578.05c19.37-6.66,43.06-2.13,60,12-10,2.2-19.24,5-28.77,6.14C384.7,598.09,372.57,590.68,369.22,578.05ZM515.68,436.86c-3.19,10.37-5.44,20.38-9.55,29.9-2.05,4.75-6.9,9.09-11.62,12.72s-11.37,5-18.77,2.63C482.22,463.68,489.17,445.81,515.68,436.86ZM453,526c12.93-15.31,26.06-29.38,52.28-28.83-2.39,6.75-13.74,22.65-20.51,27a48.67,48.67,0,0,1-14.3,5.91C464.09,531.62,458.26,529.77,453,526Zm-36.69,33.47c16.34-12.94,41.36-16.9,60.58-8.8-9.56,5.77-18.09,11.94-27.85,16.54C436.73,573,422.57,569.11,416.28,559.45ZM469,386c-11.4-15.37-12.42-43.25-1.87-58.73,3.83,7.08,8.3,13.52,10.76,20.4A58.67,58.67,0,0,1,481.39,368C481.29,375.24,477.26,381.65,469,386Zm-37.82,87.21c20.4,10.73,26.14,34.5,11.23,44.91C434.34,511,427.09,503,431.16,473.18Zm-2.73-65.52c24.66-3.4,42,8.57,39.4,26.94C445.48,433.94,438.18,420,428.43,407.66ZM408.85,548.38c-9.27-16.28-2.68-31.16,6.12-46.07C429.37,520.73,426.69,541,408.85,548.38Zm27.23-108.21c23.44,4.28,37.1,24.11,26.68,38.51C442.81,470.66,440.32,455.29,436.08,440.17ZM388.81,524c6.92,22.45-1.37,38-22.26,41.22C363.51,548.14,374.15,535.61,388.81,524Zm21-144c20.2-12,42.55-6.44,46.54,11.45C443.89,395.93,432.87,396.18,409.81,380Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M399.23,326.37c5,6.12,9.45,12,14.38,17.53,6.79,7.7,15.9,13.39,26.46,17.79a17.66,17.66,0,0,1,6.86,4.91c41,52.78,34.61,123.58-15.69,171.32-22,20.9-50.71,32.38-85.4,34.61a34.11,34.11,0,0,0-5.31,1.18c.07.6.15,1.2.23,1.79,3.33,0,6.69.23,10,0,32.54-2.63,59.07-14.33,80.48-33.22,33.84-29.84,46.82-65.33,45.27-104.5-1.06-27-10-52.23-28.41-75.28a11.17,11.17,0,0,1-1.74-4.61C442,338.55,424,326.34,399.23,326.37Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M501.33,377.9C481.28,394,480.09,413.36,481,433.67c12.62-1.79,18.26-8.44,20.87-16.31,2-6.17,2.26-12.84,2.13-19.27C503.85,391.48,502.31,384.9,501.33,377.9Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M369.22,578.05c3.35,12.63,15.48,20,31.25,18.13,9.53-1.15,18.74-3.94,28.77-6.14C412.28,575.92,388.59,571.39,369.22,578.05Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M515.68,436.86c-26.51,8.95-33.46,26.82-39.94,45.25,7.4,2.41,13.92,1.09,18.77-2.63s9.57-8,11.62-12.72C510.24,457.24,512.49,447.23,515.68,436.86Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M453,526c5.29,3.79,11.12,5.64,17.47,4.07a48.67,48.67,0,0,0,14.3-5.91c6.77-4.34,18.12-20.24,20.51-27C479,496.6,465.9,510.67,453,526Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M416.28,559.45c6.29,9.66,20.45,13.52,32.73,7.74,9.76-4.6,18.29-10.77,27.85-16.54C457.64,542.55,432.62,546.51,416.28,559.45Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M469,386c8.28-4.32,12.31-10.73,12.41-18a58.67,58.67,0,0,0-3.52-20.37c-2.46-6.88-6.93-13.32-10.76-20.4C456.56,342.72,457.58,370.6,469,386Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M431.16,473.18c-4.07,29.82,3.18,37.82,11.23,44.91C457.3,507.68,451.56,483.91,431.16,473.18Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M428.43,407.66c9.75,12.37,17.05,26.28,39.4,26.94C470.45,416.23,453.09,404.26,428.43,407.66Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M408.85,548.38c17.84-7.38,20.52-27.65,6.12-46.07C406.17,517.22,399.58,532.1,408.85,548.38Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M436.08,440.17c4.24,15.12,6.73,30.49,26.68,38.51C473.18,464.28,459.52,444.45,436.08,440.17Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M388.81,524c-14.66,11.6-25.3,24.13-22.26,41.22C387.44,562,395.73,546.46,388.81,524Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M409.81,380c23.06,16.2,34.08,15.95,46.54,11.45C452.36,373.54,430,367.94,409.81,380Z"
+                  transform="translate(-339.97 -325.87)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </div>
+            <div class="d-none d-lg-block order-lg-2">
+              <p class="fs-6 m-0">
+                Uno degli alloggi più amati <br />
+                dagli ospiti di Airbnb
+              </p>
+            </div>
+            <div class="d-flex flex-column order-1 order-sm-2">
+              <p class="m-0 text-center fs-5">4.9</p>
+              <div class="">
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column order-4">
+              <p class="m-0 text-center fs-5">21</p>
+              <p class="m-0 small">recensioni</p>
+            </div>
+          </div>
+          <hr class="w-100 mx-auto d-sm-none" />
+          <!--PARTE SCRITTA A DX-->
+
+          <!--host-->
+          <div class="host-section d-flex align-items-center gap-2 mt-2">
+            <div>
+              <img
+                class="w-100"
+                src="https://a0.muscache.com/im/pictures/user/e363d815-110e-4110-8a4c-39b1de5578db.jpg?im_w=240"
+                alt=""
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <p>Soggiorna da Patrizia</p>
+              <p>Superhost &bull; 2 anni da host</p>
+            </div>
+          </div>
+          <hr />
+          <!--servizi-->
+          <div class="service d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-key-fill"></i>
+              <div>
+                <p>Esperienza di check-in eccezionale</p>
+                <p>
+                  Gli ospiti che hanno soggiornato qui di recente hanno valutato
+                  la procedura di check-in con 5 stelle.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+              <i class="bi bi-p-circle"></i>
+              <div>
+                <p>Parcheggia gratis</p>
+                <p>
+                  Questo è uno dei pochi posti in zona con parcheggio gratuito.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-lamp"></i>
+              <div>
+                <p>Stanza in bed and breakfast</p>
+                <p>
+                  La tua stanza si trova in un alloggio e hai accesso agli spazi
+                  condivisi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
         </div>
-      </div>
-      <div class="col-6 d-none d-sm-block p-0">
-        <div class="d-flex gap-2 mb-2">
-          <div class="col-6 p-0">
-            <div class="image-container">
-              <img class="room-img img-fluid" src="./assets/assets/2.webp" alt="">
-            </div>
-          </div>
-          <div class="col-6 p-0">
-            <div class="image-container">
-              <img class="room-img imgtitle-bordertop img-fluid" src="./assets/assets/3.webp" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="d-flex gap-2">
-          <div class="col-6 p-0">
-            <div class="image-container">
-              <img class="room-img img-fluid" src="./assets/assets/5.webp" alt="">
-            </div>
-          </div>
-          <div class="col-6 p-0">
-            <div class="image-container">
-              <img class="room-img img-fluid imgtitle-borderbottom" src="./assets/assets/2.webp" alt="">
-            </div>
-          </div>
+        <!--DIV SOPRA è LA CHIUSURA DELLA COL8 QUINDI TUTTO LA PARTE DX -->
+
+        <div class="col-12 col-md-4">
+          <!-----------STEACKY----------->
         </div>
       </div>
     </div>
-  </div>
 
-  <main class="container mt-5">
+    <!--<main class="container mt-5">
     <div class="row">
       <div class="col-9 p-0">
         <h3>Stanza &bull; Milano, Italia</h3>
-        <p>1 letto matrimoniale &bull; Bagno condiviso</p>
+     
       </div>
     </div>
     <div class="row">
@@ -306,7 +553,7 @@
           
           <!----------- Codice pulito fino a qui ----------------->
 
-          <h4 class="fw-bold my-4">A proposito di questo alloggio</h4>
+    <!--  <h4 class="fw-bold my-4">A proposito di questo alloggio</h4>
           <p>
             A proposito di questo alloggio Nel centro storico di Milano, a pochi
             passi da Brera, il Duomo, in un’atmosfera informale, appartamento
@@ -484,7 +731,7 @@
         recensioni e affidabilità
       </p>
     </div>
-
+-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -498,6 +745,5 @@
     ></script>
 
     <script src="./secondPage.js"></script>
-
   </body>
 </html>
