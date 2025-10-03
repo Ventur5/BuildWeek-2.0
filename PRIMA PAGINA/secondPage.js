@@ -34,7 +34,7 @@ function renderCalendar(){
 
     let date = 1;
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < monthNames.length; i++) {
         const row = document.createElement('tr');
 
         for (let x = 0; x < 7; x++) {
