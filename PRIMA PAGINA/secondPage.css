@@ -131,13 +131,13 @@ svg{
   font-weight: 600;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 767px)  {
   .container-recensioni{
    border: none;
   }
 }
 
-@media (min-width: 576px)  {
+@media (min-width: 768px)  {
   .container-recensioni{
  border: 1px solid grey;
   border-radius: 10px;
@@ -172,7 +172,7 @@ border-radius: 50%;
 }
 
 
-/*------------- SEZIONE service------ AIUTO ICONA TONDA*/
+
 
 .service i{
   font-size: 35px;
@@ -195,7 +195,33 @@ border-radius: 50%;
   margin: 0;
 }
 
+.description button, .section-icons button {
+  background-color: #d9d8d8;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-top: 20px;
+}
 
+.description button:hover, .section-icons button{
+  background-color: #cdcdcd;
+  font-weight: 600;
+}
+
+@media (max-width: 767px)  {
+  .description button, .section-icons button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px)  {
+  .description button, .section-icons button {
+    width: auto
+  }
+}
+
+.maps{
+ 
+}
 
 
 .thumbnails-main-container {
