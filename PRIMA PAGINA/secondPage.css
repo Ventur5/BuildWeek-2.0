@@ -523,7 +523,7 @@ thead tr {
 
 .mappa {
   width: 100%;
-
+}
 /*---------------Footer-Copy---------------------*/
 footer {
   background-color: #ffeded;
@@ -613,7 +613,7 @@ footer .down-footer p {
   cursor: pointer;
 }
 /*---------agg. angelo------------*/
-.container-btn-modal{
+.container-btn-modal {
   display: flex;
   justify-content: center;
   align-items: center;
