@@ -60,7 +60,7 @@
 .second-navbar-item:hover {
   cursor: pointer;
 }
-
+ /*----------------------IMG----------------*/
 .image-container {
     position: relative;
 }
@@ -92,6 +92,111 @@
 .imgtitle-borderbottom {
     border-bottom-right-radius: 10px;
 }
+/*-----------------TITOLO E SOTTOTILO------------------*/
+
+@media (max-width: 575px)  {
+  .title-2 p{
+    font-family: 1rem;
+    color: #817e7e;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px)  {
+  .title-2 p:nth-of-type(1) {
+    font-size: 1.5rem;
+    color: black;
+    font-weight:600;
+  }
+}
+
+.p-svg{
+line-height: 20px;
+text-align: center;
+
+}
+svg{
+  height: 50px;
+}
+/*CONTAINER RECENSIONI*/
+.container-recensioni{
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.container-recensioni P{
+  font-weight: 600;
+}
+
+@media (max-width: 768px)  {
+  .container-recensioni{
+   border: none;
+  }
+}
+
+@media (min-width: 576px)  {
+  .container-recensioni{
+ border: 1px solid grey;
+  border-radius: 10px;
+  }
+}
+
+/*------------- SEZIONE HOST------ AIUTO ICONA TONDA*/
+.host-section div:nth-of-type(1){
+width: 60px;
+height: 60px;
+border-radius: 50%;
+
+}
+
+.host-section div:nth-of-type(1) img{
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.host-section div p:nth-of-type(1) {
+ font-weight: 600;
+ font-size: 16px;
+  margin: 0;
+}
+.host-section div p:nth-of-type(2) {
+ color:#817e7e ;
+  font-size: 13px;
+  margin: 0;
+ 
+}
+
+
+/*------------- SEZIONE service------ AIUTO ICONA TONDA*/
+
+.service i{
+  font-size: 35px;
+  padding: 10px;
+}
+
+.service {
+  font-size: 15px;
+  margin: 0;
+}
+
+.service p:nth-of-type(1){
+  font-weight: 600;
+  margin: 0;
+}
+
+.service p:nth-of-type(2){
+  color:#817e7e ;
+  font-size: 13px;
+  margin: 0;
+}
+
+
+
 
 .thumbnails-main-container {
     max-width: 800px;
