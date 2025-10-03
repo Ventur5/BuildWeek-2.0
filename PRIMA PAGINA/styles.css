@@ -6,7 +6,8 @@ body {
 /*----------------Navbar--------------------------*/
 .navbar {
   background: #ffffff;
-  background-color: white
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 .navbar-brand img {
@@ -99,20 +100,34 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  max-width: 160px;
+  margin: 0 auto;
 }
 
 .second-navbar {
+    height: 5rem;
+    border-radius: 50px;
+    border: 1px solid #3a3a3a20;
+    box-shadow: 0 0 8px #00000037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+@media (max-width: 1024px) {
+  .second-navbar {
+    height: 4.5rem;
+    font-size: 15px;
+    padding: 0 10px;
 
-  width: 45rem;
-  height: 3.5rem;
-  border-radius: 50px;
-  border: 1px solid #3a3a3a20;
-  box-shadow: 0 0 8px #00000037;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  margin: 20px;
+  }
+  .second-navbar-item img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .second-navbar-item {
+    width: 150px;
+  }
 }
 
 .second-navbar-item {
@@ -144,7 +159,8 @@ body {
 
 .second-navbar-item img {
   background-color: rgb(244, 88, 88);
-  width: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 #toggleMenu {
@@ -163,16 +179,12 @@ body {
 }
 
 .dropdown-menu {
-
-  position: absolute;
-  top: 190px;
-  margin-left: -7rem;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  width: 350px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 150px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #toggleMenu:checked+.dropdown-toggle+.dropdown-menu {
@@ -232,7 +244,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100vw;
   height: 700px;
   position: relative;
-}
+  margin-top: 20px;
+}                          
+
 
 .container-img-hero img {
   width: 100%;

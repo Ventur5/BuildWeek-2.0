@@ -15,14 +15,88 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 40px;
-  padding: 0.5rem;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   border: 1px solid #ddd;
   gap: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
   height: 3rem;
+  margin-left: 80px;
+}
+
+.second-navbar-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 991px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .second-navbar-item span {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+  .navbar-lastbtn h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .second-navbar-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+  .navbar-lastbtn h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .second-navbar-item span {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
+  .navbar-lastbtn h6 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: none;
+    display: inline;
+  }
 }
 
 .section-navBar {
@@ -209,7 +283,6 @@ svg {
 }
 
 @media (max-width: 767px) {
-
   .description button,
   .section-icons button {
     width: 100%;
@@ -218,9 +291,10 @@ svg {
 
 @media (min-width: 768px) {
 
-  .description button,
-  .section-icons button {
-    width: auto
+
+ .description button,
+ .section-icons button {
+    width: auto;
   }
 }
 
@@ -311,6 +385,7 @@ thead tr {
   padding: 20ox;
   margin: 20px;
 }
+
 
 .reviews {
   font-size: 100px;
@@ -448,4 +523,98 @@ thead tr {
 
 .mappa {
   width: 100%;
+
+/*---------------Footer-Copy---------------------*/
+footer {
+  background-color: #ffeded;
+}
+
+footer .top-footer ul,
+footer .down-footer ul {
+  list-style: none;
+  font-size: 12px;
+}
+
+footer .top-footer ul li {
+  padding-bottom: 12px;
+}
+footer .top-footer ul li:nth-of-type(1) {
+  font-weight: bold;
+}
+footer .top-footer ul li a,
+footer .down-footer ul li a {
+  color: #000;
+  text-decoration: none;
+  margin: 0;
+}
+
+footer .top-footer ul li a:hover,
+footer .down-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .down-footer ul,
+footer .down-footer p {
+  margin: 0;
+}
+
+.grid-language,
+.grid-values {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.grid-language button,
+.first-language button,
+.grid-values button {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal-language,
+.modal-value {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.close-value,
+.close-language {
+  color: #000;
+  float: left;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*---------agg. angelo------------*/
+.container-btn-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
