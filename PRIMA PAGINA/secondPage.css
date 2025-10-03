@@ -421,6 +421,19 @@ thead tr {
 .img1 {
   width: 100px;
 }
+.spunta {
+  width: 30px;
+}
+.spunta1{
+  width: 50px;
+}
+.valutation{
+  font-size: 15px;
+}
+.mappa{
+  width: 100%;
+}
+
 
 /*---------------Footer-Copy---------------------*/
 footer {
