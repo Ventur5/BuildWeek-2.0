@@ -21,6 +21,10 @@
   height: 3rem;
   margin-left: 80px;
 }
+.home-nav {
+  width: 20px;
+  height: 20px;
+}
 
 .second-navbar-item span {
   white-space: nowrap;
@@ -148,7 +152,7 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .image-container:hover::after {
@@ -290,10 +294,8 @@ svg {
 }
 
 @media (min-width: 768px) {
-
-
- .description button,
- .section-icons button {
+  .description button,
+  .section-icons button {
     width: auto;
   }
 }
@@ -385,7 +387,6 @@ thead tr {
   padding: 20ox;
   margin: 20px;
 }
-
 
 .reviews {
   font-size: 100px;
@@ -510,7 +511,7 @@ thead tr {
 .evaluation p:nth-of-type(5)::after,
 .evaluation p:nth-of-type(6)::after,
 .evaluation p:nth-of-type(7)::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: gray;
   top: 0;
@@ -617,4 +618,73 @@ footer .down-footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*---------CALENDARIO------------*/
+.calendar-section table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.calendar-section th,
+.calendar-section td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.calendar-section th {
+  background: #f7f7f7;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e2e2e2;
+}
+.calendar-section td:hover:not(:empty) {
+  background: #ffe6e6;
+}
+.calendar-section input[type="date"] {
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+}
+.calendar-section label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #d2315b;
+}
+.calendar-section .button-calendar {
+  background: #ff385c;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+}
+@media (max-width: 576px) {
+  .calendar-section th,
+  .calendar-section td {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+}
+
+.button-calendar {
+  width: 100%;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .button-calendar {
+    width: 50%;
+    background-color: #fff;
+  }
+
 }
