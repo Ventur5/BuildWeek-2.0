@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 6rem;
+  width: 8.5rem;
 }
 
 .navbar-nav .nav-item {
@@ -243,7 +243,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100vw;
   height: 700px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 35px;
 }                          
 
 
